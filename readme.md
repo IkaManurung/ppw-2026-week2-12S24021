@@ -132,3 +132,18 @@ Portfolio menggunakan sistem responsive grid Bootstrap:
 
 ```html
 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4
+
+
+## Screenshot
+
+### Week 2 – Sebelum Refactoring
+
+![Week 2 Desktop](screenshots/desktop.png)
+
+![Week 2 Mobile](screenshots/mobile.png)
+
+### Week 3 – Setelah Refactoring
+
+![Week 3 Desktop](screenshots/week3-desktop.png)
+
+![Week 3 Mobile](screenshots/week3-mobile.png)

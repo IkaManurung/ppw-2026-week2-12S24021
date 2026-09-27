@@ -188,7 +188,7 @@ a {
     align-items: center;
     gap: 12px;
 
-    color: var(--white) !important;
+    color: var(--white);
     font-weight: 800;
 }
 
@@ -281,7 +281,7 @@ a {
 .btn-primary-custom {
     padding: 11px 20px;
 
-    color: var(--navy-950) !important;
+    color: var(--navy-950);
     background: var(--blue-300);
 
     border: 1px solid var(--blue-300);
@@ -290,7 +290,7 @@ a {
 }
 
 .btn-primary-custom:hover {
-    color: var(--navy-950) !important;
+    color: var(--navy-950);
     background: var(--white);
     border-color: var(--white);
 
@@ -893,7 +893,7 @@ a {
 }
 
 .message-field {
-    min-height: 160px !important;
+    min-height: 160px;
 }
 
 .preference-fieldset {
@@ -1159,7 +1159,7 @@ a {
     }
 
     .navbar-nav .nav-item.ms-lg-3 {
-        margin-left: 0 !important;
+        margin-left: 0;
     }
 
 }
@@ -1227,7 +1227,7 @@ a {
 
 /* =========================================================
    17. REDUCED MOTION
-   Tidak menggunakan !important
+   Tidak menggunakan
 ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
