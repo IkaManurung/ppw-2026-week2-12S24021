@@ -137,3 +137,16 @@ flowchart LR
     SERVICE --> JSON
     SERVICE --> REST
     SERVICE --> STORAGE
+
+
+    ## Cold Load
+
+![Cold Load](screenshots/week4-cold-load.png)
+
+## Warm Load
+
+![Warm Load](screenshots/week4-warm-load.png)
+
+## TTFB / Timing
+
+![Timing](screenshots/week4-timing.png)
