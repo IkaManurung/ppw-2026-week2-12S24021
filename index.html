@@ -11,12 +11,14 @@
 
     <meta
         name="description"
-        content="Portfolio Ika Maria, mahasiswa Sistem Informasi Institut Teknologi Del."
+        content="Portfolio Ika Maria Manurung, mahasiswa Sistem Informasi Institut Teknologi Del."
     >
 
-    <title>Ika Maria — Information Systems Student</title>
+    <title>
+        Ika Maria — Information Systems Student
+    </title>
 
-    <!-- Bootstrap 5.3 CSS -->
+    <!-- Bootstrap 5.3 -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -28,22 +30,27 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     >
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Custom CSS Week 3 -->
+    <link
+        rel="stylesheet"
+        href="css/custom-style.css"
+    >
 </head>
 
 
 <body>
 
     <!-- Skip Link -->
-    <a href="#main-content" class="skip-link">
+    <a
+        href="#main-content"
+        class="skip-link"
+    >
         Lewati ke konten utama
     </a>
 
 
-    <!-- =====================================================
-         HEADER & NAVBAR
-    ====================================================== -->
+    <!-- ================= HEADER ================= -->
+
     <header class="site-header">
 
         <nav
@@ -53,12 +60,11 @@
 
             <div class="container">
 
-                <!-- Brand -->
                 <a
                     class="navbar-brand brand"
                     href="#home"
-                    aria-label="Kembali ke halaman utama"
                 >
+
                     <span class="brand-mark">
                         IM
                     </span>
@@ -66,12 +72,12 @@
                     <span class="brand-text">
                         IKA<span>MARIA</span>
                     </span>
+
                 </a>
 
 
-                <!-- Mobile Navigation Button -->
                 <button
-                    class="navbar-toggler"
+                    class="navbar-toggler border-0"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#mainNavigation"
@@ -79,17 +85,22 @@
                     aria-expanded="false"
                     aria-label="Buka navigasi"
                 >
-                    <span class="navbar-toggler-icon"></span>
+
+                    <span
+                        class="navbar-toggler-icon"
+                    ></span>
+
                 </button>
 
 
-                <!-- Navigation Menu -->
                 <div
                     class="collapse navbar-collapse"
                     id="mainNavigation"
                 >
 
-                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <ul
+                        class="navbar-nav ms-auto align-items-lg-center"
+                    >
 
                         <li class="nav-item">
                             <a
@@ -118,14 +129,16 @@
                             </a>
                         </li>
 
-                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                            <a
-                                class="btn btn-primary-custom"
-                                href="#contact"
-                            >
-                                Say hello
-                                <i class="bi bi-arrow-up-right"></i>
-                            </a>
+                        <li class="nav-item ms-lg-3">
+                            <span class="nav-link">
+                                Orders:
+                                <span
+                                    id="orderCount"
+                                    class="badge bg-primary"
+                                >
+                                    0
+                                </span>
+                            </span>
                         </li>
 
                     </ul>
@@ -139,46 +152,43 @@
     </header>
 
 
+    <!-- ================= MAIN ================= -->
 
-    <!-- =====================================================
-         MAIN CONTENT
-    ====================================================== -->
     <main id="main-content">
 
 
-        <!-- =====================================================
-             HERO SECTION
-        ====================================================== -->
+        <!-- ================= HERO ================= -->
+
         <section
             id="home"
             class="hero-section section-padding"
-            aria-labelledby="hero-title"
         >
 
             <div class="container">
 
-                <div class="row align-items-center g-5">
+                <div
+                    class="row align-items-center g-5"
+                >
 
-                    <!-- Hero Text -->
                     <div class="col-lg-7">
 
                         <div class="hero-content">
 
-                            <!-- Tidak ada lagi "MAHASISWA SISTEM INFORMASI" -->
-
-                            <h1 id="hero-title">
+                            <h1>
                                 Halo, saya
                                 <span>Ika.</span>
                             </h1>
 
-
-                            <p class="hero-description">
-                                Saya mahasiswa Sistem Informasi yang sedang
-                                belajar dan mengembangkan kemampuan melalui
-                                berbagai project perkuliahan di bidang
-                                teknologi.
+                            <p
+                                class="hero-description"
+                                data-profile-description
+                            >
+                                Saya mahasiswa Sistem Informasi
+                                yang sedang belajar dan
+                                mengembangkan kemampuan melalui
+                                berbagai project perkuliahan
+                                di bidang teknologi.
                             </p>
-
 
                             <div class="hero-actions">
 
@@ -187,9 +197,10 @@
                                     class="btn btn-primary-custom"
                                 >
                                     Lihat project
-                                    <i class="bi bi-arrow-down"></i>
+                                    <i
+                                        class="bi bi-arrow-down"
+                                    ></i>
                                 </a>
-
 
                                 <a
                                     href="#about"
@@ -205,12 +216,13 @@
                     </div>
 
 
-                    <!-- Hero Image -->
                     <div class="col-lg-5">
 
                         <div class="profile-card">
 
-                            <div class="profile-image-wrapper">
+                            <div
+                                class="profile-image-wrapper"
+                            >
 
                                 <img
                                     src="images/foto-ika.png"
@@ -221,18 +233,24 @@
                             </div>
 
 
-                            <div class="profile-caption">
+                            <div
+                                class="profile-caption"
+                            >
 
-                                <h2>
+                                <h2 data-profile-name>
                                     Ika Maria Manurung
                                 </h2>
 
-                                <p>
-                                    Mahasiswa Sistem Informasi · Semester 5
+                                <p
+                                    data-profile-semester
+                                >
+                                    Semester 5
                                 </p>
 
-                                <span>
-                                    Institut Teknologi Del
+                                <span
+                                    data-profile-program
+                                >
+                                    S1 Sistem Informasi
                                 </span>
 
                             </div>
@@ -248,14 +266,11 @@
         </section>
 
 
+        <!-- ================= ABOUT ================= -->
 
-        <!-- =====================================================
-             ABOUT SECTION
-        ====================================================== -->
         <section
             id="about"
             class="about-section section-padding"
-            aria-labelledby="about-title"
         >
 
             <div class="container">
@@ -268,103 +283,104 @@
                             ABOUT ME
                         </p>
 
-                        <h2
-                            id="about-title"
-                            class="section-title"
-                        >
+                        <h2 class="section-title">
                             Sedikit tentang saya.
                         </h2>
 
                     </div>
 
 
-                    <div class="col-lg-7 about-content">
+                    <div
+                        class="col-lg-7 about-content"
+                    >
 
                         <p class="about-lead">
-                            Saya adalah mahasiswa Sistem Informasi yang
-                            masih dalam proses belajar dan mengembangkan
+                            Saya adalah mahasiswa Sistem
+                            Informasi yang masih dalam proses
+                            belajar dan mengembangkan
                             kemampuan di bidang teknologi.
                         </p>
 
-
                         <p>
-                            Selama perkuliahan, saya tertarik untuk mencoba
-                            berbagai project yang berhubungan dengan
-                            interface design, website development, dan
-                            pengolahan data.
+                            Selama perkuliahan, saya tertarik
+                            untuk mencoba berbagai project
+                            yang berhubungan dengan interface
+                            design, website development,
+                            dan pengolahan data.
                         </p>
 
-
                         <p>
-                            Bagi saya, setiap project menjadi kesempatan
-                            untuk belajar hal baru dan memperbaiki
-                            kemampuan yang sudah dimiliki.
+                            Bagi saya, setiap project menjadi
+                            kesempatan untuk belajar hal baru
+                            dan memperbaiki kemampuan yang
+                            sudah dimiliki.
                         </p>
 
 
                         <div class="learning-list">
 
-                            <article class="learning-item">
+                            <article
+                                class="learning-item"
+                            >
 
-                                <span class="learning-number">
+                                <span
+                                    class="learning-number"
+                                >
                                     01
                                 </span>
 
                                 <div>
-
-                                    <h3>
-                                        Explore
-                                    </h3>
-
+                                    <h3>Explore</h3>
                                     <p>
-                                        Mencoba teknologi dan tools baru
-                                        melalui project perkuliahan.
+                                        Mencoba teknologi
+                                        dan tools baru melalui
+                                        project perkuliahan.
                                     </p>
-
                                 </div>
 
                             </article>
 
 
-                            <article class="learning-item">
+                            <article
+                                class="learning-item"
+                            >
 
-                                <span class="learning-number">
+                                <span
+                                    class="learning-number"
+                                >
                                     02
                                 </span>
 
                                 <div>
-
-                                    <h3>
-                                        Create
-                                    </h3>
-
+                                    <h3>Create</h3>
                                     <p>
-                                        Mengubah ide menjadi rancangan
-                                        website atau aplikasi.
+                                        Mengubah ide menjadi
+                                        rancangan website
+                                        atau aplikasi.
                                     </p>
-
                                 </div>
 
                             </article>
 
 
-                            <article class="learning-item">
+                            <article
+                                class="learning-item"
+                            >
 
-                                <span class="learning-number">
+                                <span
+                                    class="learning-number"
+                                >
                                     03
                                 </span>
 
                                 <div>
-
-                                    <h3>
-                                        Improve
-                                    </h3>
-
+                                    <h3>Improve</h3>
                                     <p>
-                                        Terus memperbaiki hasil project
-                                        berdasarkan proses belajar.
+                                        Terus memperbaiki
+                                        hasil project
+                                        berdasarkan proses
+                                        belajar.
                                     </p>
-
                                 </div>
 
                             </article>
@@ -380,19 +396,18 @@
         </section>
 
 
+        <!-- ================= PROJECTS ================= -->
 
-        <!-- =====================================================
-             ACADEMIC JOURNEY / PROJECTS
-        ====================================================== -->
         <section
             id="academic-journey"
             class="projects-section section-padding"
-            aria-labelledby="projects-title"
         >
 
             <div class="container">
 
-                <div class="heading-row mb-5">
+                <div
+                    class="heading-row mb-5"
+                >
 
                     <div>
 
@@ -400,293 +415,86 @@
                             ACADEMIC JOURNEY
                         </p>
 
-                        <h2
-                            id="projects-title"
-                            class="section-title"
-                        >
-                            Project yang pernah saya kerjakan.
+                        <h2 class="section-title">
+                            Project yang pernah
+                            saya kerjakan.
                         </h2>
 
                     </div>
 
-
                     <p class="section-intro">
-                        Beberapa project perkuliahan yang menjadi bagian
-                        dari proses belajar saya selama menjadi mahasiswa
-                        Sistem Informasi.
+                        Beberapa project perkuliahan
+                        yang menjadi bagian dari proses
+                        belajar saya.
                     </p>
 
                 </div>
 
 
+                <!-- FILTER -->
 
                 <div
-                    class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+                    class="row justify-content-end mb-4"
                 >
 
-
-                    <!-- Project 1 -->
-                    <div class="col">
-
-                        <article class="card project-card h-100">
-
-                            <div class="project-banner project-banner-one">
-
-                                <span class="project-number">
-                                    01
-                                </span>
-
-                                <i class="bi bi-cart3"></i>
-
-                            </div>
-
-
-                            <div class="card-body">
-
-                                <div class="project-meta">
-
-                                    <span class="badge tech-badge">
-                                        E-Commerce
-                                    </span>
-
-                                    <span class="project-year">
-                                        2026
-                                    </span>
-
-                                </div>
-
-
-                                <h3 class="card-title">
-                                    CendraMatak
-                                </h3>
-
-
-                                <p class="card-text">
-                                    Platform digital yang menghubungkan
-                                    wisatawan di kawasan Danau Toba
-                                    dengan pengrajin oleh-oleh lokal.
-                                </p>
-
-
-                                <button
-                                    type="button"
-                                    class="btn btn-project"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#cendramatakModal"
-                                >
-                                    Lihat detail
-                                    <i class="bi bi-arrow-up-right"></i>
-                                </button>
-
-                            </div>
-
-                        </article>
-
-                    </div>
-
-
-
-                    <!-- Project 2 -->
-                    <div class="col">
-
-                        <article class="card project-card h-100">
-
-                            <div class="project-banner project-banner-two">
-
-                                <span class="project-number">
-                                    02
-                                </span>
-
-                                <i class="bi bi-code-slash"></i>
-
-                            </div>
-
-
-                            <div class="card-body">
-
-                                <div class="project-meta">
-
-                                    <span class="badge tech-badge">
-                                        Java / OOP
-                                    </span>
-
-                                    <span class="project-year">
-                                        2026
-                                    </span>
-
-                                </div>
-
-
-                                <h3 class="card-title">
-                                    Laundry Del
-                                </h3>
-
-
-                                <p class="card-text">
-                                    Aplikasi berbasis Java untuk membantu
-                                    mengelola data dan proses laundry di
-                                    asrama Institut Teknologi Del.
-                                </p>
-
-
-                                <button
-                                    type="button"
-                                    class="btn btn-project"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#laundryModal"
-                                >
-                                    Lihat detail
-                                    <i class="bi bi-arrow-up-right"></i>
-                                </button>
-
-                            </div>
-
-                        </article>
-
-                    </div>
-
-
-
-                    <!-- Project 3 -->
-                    <div class="col">
-
-                        <article class="card project-card h-100">
-
-                            <div class="project-banner project-banner-three">
-
-                                <span class="project-number">
-                                    03
-                                </span>
-
-                                <i class="bi bi-phone"></i>
-
-                            </div>
-
-
-                            <div class="card-body">
-
-                                <div class="project-meta">
-
-                                    <span class="badge tech-badge">
-                                        UI / UX
-                                    </span>
-
-                                    <span class="project-year">
-                                        2026
-                                    </span>
-
-                                </div>
-
-
-                                <h3 class="card-title">
-                                    Ma-U
-                                </h3>
-
-
-                                <p class="card-text">
-                                    Perancangan aplikasi mobile untuk
-                                    specialty matcha shop dengan fokus
-                                    pada tampilan produk dan alur checkout.
-                                </p>
-
-
-                                <button
-                                    type="button"
-                                    class="btn btn-project"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#mauModal"
-                                >
-                                    Lihat detail
-                                    <i class="bi bi-arrow-up-right"></i>
-                                </button>
-
-                            </div>
-
-                        </article>
-
-                    </div>
-
-
-
-                    <!-- Project 4 -->
-                    <div class="col">
-
-                        <article class="card project-card h-100">
-
-                            <div class="project-banner project-banner-four">
-
-                                <span class="project-number">
-                                    04
-                                </span>
-
-                                <i class="bi bi-heart-pulse"></i>
-
-                            </div>
-
-
-                            <div class="card-body">
-
-                                <div class="project-meta">
-
-                                    <span class="badge tech-badge">
-                                        Application Design
-                                    </span>
-
-                                    <span class="project-year">
-                                        2026
-                                    </span>
-
-                                </div>
-
-
-                                <h3 class="card-title">
-                                    Imunify
-                                </h3>
-
-
-                                <p class="card-text">
-                                    Aplikasi pencatatan imunisasi anak
-                                    untuk melihat jadwal, riwayat kesehatan,
-                                    dan fasilitas kesehatan terdekat.
-                                </p>
-
-
-                                <button
-                                    type="button"
-                                    class="btn btn-project"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#imunifyModal"
-                                >
-                                    Lihat detail
-                                    <i class="bi bi-arrow-up-right"></i>
-                                </button>
-
-                            </div>
-
-                        </article>
+                    <div class="col-md-4">
+
+                        <label
+                            for="categoryFilter"
+                            class="form-label"
+                        >
+                            Filter kategori
+                        </label>
+
+                        <select
+                            id="categoryFilter"
+                            class="form-select"
+                        >
+
+                            <option value="all">
+                                Semua Project
+                            </option>
+
+                        </select>
 
                     </div>
 
                 </div>
+
+
+                <!-- UI STATE -->
+
+                <div
+                    id="projectState"
+                    aria-live="polite"
+                ></div>
+
+
+                <!-- DYNAMIC PROJECT CONTAINER -->
+
+                <div
+                    id="projectContainer"
+                    class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+                ></div>
 
             </div>
 
         </section>
 
 
+        <!-- ================= UNIVERSAL MODAL ================= -->
 
-        <!-- =====================================================
-             MODAL CENDRAMATAK
-        ====================================================== -->
         <div
             class="modal fade"
-            id="cendramatakModal"
+            id="universalProjectModal"
             tabindex="-1"
-            aria-labelledby="cendramatakModalLabel"
+            aria-labelledby="projectModalTitle"
             aria-hidden="true"
         >
 
-            <div class="modal-dialog modal-dialog-centered">
+            <div
+                class="modal-dialog modal-lg modal-dialog-centered"
+            >
 
                 <div class="modal-content">
 
@@ -695,18 +503,17 @@
                         <div>
 
                             <span class="modal-label">
-                                PROJECT 01
+                                PROJECT DETAIL
                             </span>
 
                             <h2
                                 class="modal-title"
-                                id="cendramatakModalLabel"
+                                id="projectModalTitle"
                             >
-                                CendraMatak
+                                Project
                             </h2>
 
                         </div>
-
 
                         <button
                             type="button"
@@ -718,31 +525,10 @@
                     </div>
 
 
-                    <div class="modal-body">
-
-                        <span class="badge tech-badge mb-3">
-                            E-Commerce
-                        </span>
-
-                        <p>
-                            Platform digital yang menghubungkan wisatawan
-                            di kawasan Danau Toba dengan pengrajin
-                            oleh-oleh lokal.
-                        </p>
-
-                    </div>
-
-
-                    <div class="modal-footer">
-
-                        <button
-                            type="button"
-                            class="btn btn-outline-custom"
-                            data-bs-dismiss="modal"
-                        >
-                            Tutup
-                        </button>
-
+                    <div
+                        class="modal-body"
+                        id="projectModalBody"
+                    >
                     </div>
 
                 </div>
@@ -752,357 +538,54 @@
         </div>
 
 
+        <!-- ================= CONTACT ================= -->
 
-        <!-- =====================================================
-             MODAL LAUNDRY DEL
-        ====================================================== -->
-        <div
-            class="modal fade"
-            id="laundryModal"
-            tabindex="-1"
-            aria-labelledby="laundryModalLabel"
-            aria-hidden="true"
-        >
-
-            <div class="modal-dialog modal-dialog-centered">
-
-                <div class="modal-content">
-
-                    <div class="modal-header">
-
-                        <div>
-
-                            <span class="modal-label">
-                                PROJECT 02
-                            </span>
-
-                            <h2
-                                class="modal-title"
-                                id="laundryModalLabel"
-                            >
-                                Laundry Del
-                            </h2>
-
-                        </div>
-
-
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Tutup"
-                        ></button>
-
-                    </div>
-
-
-                    <div class="modal-body">
-
-                        <span class="badge tech-badge mb-3">
-                            Java / OOP
-                        </span>
-
-                        <p>
-                            Aplikasi berbasis Java untuk membantu
-                            mengelola data dan proses laundry di asrama
-                            Institut Teknologi Del.
-                        </p>
-
-                    </div>
-
-
-                    <div class="modal-footer">
-
-                        <button
-                            type="button"
-                            class="btn btn-outline-custom"
-                            data-bs-dismiss="modal"
-                        >
-                            Tutup
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =====================================================
-             MODAL MA-U
-        ====================================================== -->
-        <div
-            class="modal fade"
-            id="mauModal"
-            tabindex="-1"
-            aria-labelledby="mauModalLabel"
-            aria-hidden="true"
-        >
-
-            <div class="modal-dialog modal-dialog-centered">
-
-                <div class="modal-content">
-
-                    <div class="modal-header">
-
-                        <div>
-
-                            <span class="modal-label">
-                                PROJECT 03
-                            </span>
-
-                            <h2
-                                class="modal-title"
-                                id="mauModalLabel"
-                            >
-                                Ma-U
-                            </h2>
-
-                        </div>
-
-
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Tutup"
-                        ></button>
-
-                    </div>
-
-
-                    <div class="modal-body">
-
-                        <span class="badge tech-badge mb-3">
-                            UI / UX
-                        </span>
-
-                        <p>
-                            Perancangan aplikasi mobile untuk specialty
-                            matcha shop dengan fokus pada tampilan produk
-                            dan alur checkout.
-                        </p>
-
-                    </div>
-
-
-                    <div class="modal-footer">
-
-                        <button
-                            type="button"
-                            class="btn btn-outline-custom"
-                            data-bs-dismiss="modal"
-                        >
-                            Tutup
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =====================================================
-             MODAL IMUNIFY
-        ====================================================== -->
-        <div
-            class="modal fade"
-            id="imunifyModal"
-            tabindex="-1"
-            aria-labelledby="imunifyModalLabel"
-            aria-hidden="true"
-        >
-
-            <div class="modal-dialog modal-dialog-centered">
-
-                <div class="modal-content">
-
-                    <div class="modal-header">
-
-                        <div>
-
-                            <span class="modal-label">
-                                PROJECT 04
-                            </span>
-
-                            <h2
-                                class="modal-title"
-                                id="imunifyModalLabel"
-                            >
-                                Imunify
-                            </h2>
-
-                        </div>
-
-
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Tutup"
-                        ></button>
-
-                    </div>
-
-
-                    <div class="modal-body">
-
-                        <span class="badge tech-badge mb-3">
-                            Application Design
-                        </span>
-
-                        <p>
-                            Aplikasi pencatatan imunisasi anak untuk
-                            melihat jadwal, riwayat kesehatan, dan
-                            fasilitas kesehatan terdekat.
-                        </p>
-
-                    </div>
-
-
-                    <div class="modal-footer">
-
-                        <button
-                            type="button"
-                            class="btn btn-outline-custom"
-                            data-bs-dismiss="modal"
-                        >
-                            Tutup
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =====================================================
-             CONTACT SECTION
-        ====================================================== -->
         <section
             id="contact"
             class="contact-section section-padding"
-            aria-labelledby="contact-title"
         >
 
             <div class="container">
 
                 <div class="row g-5">
 
-                    <!-- Contact Information -->
                     <div class="col-lg-5">
 
-                        <p class="eyebrow eyebrow-light">
+                        <p
+                            class="eyebrow eyebrow-light"
+                        >
                             CONTACT
                         </p>
 
-
                         <h2
-                            id="contact-title"
                             class="section-title section-title-light"
                         >
                             Let's connect.
                         </h2>
 
-
                         <p class="contact-intro">
-                            Jika ingin berdiskusi mengenai project,
-                            UI/UX, website, atau kegiatan akademik,
-                            silakan hubungi saya melalui form berikut.
+                            Jika ingin berdiskusi mengenai
+                            project, UI/UX, website, atau
+                            kegiatan akademik, silakan
+                            hubungi saya melalui form berikut.
                         </p>
-
-
-                        <div class="contact-points">
-
-                            <div class="contact-point">
-
-                                <i class="bi bi-mortarboard"></i>
-
-                                <div>
-
-                                    <h3>
-                                        Academic discussion
-                                    </h3>
-
-                                    <p>
-                                        Diskusi mengenai project
-                                        perkuliahan dan pembelajaran.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="contact-point">
-
-                                <i class="bi bi-laptop"></i>
-
-                                <div>
-
-                                    <h3>
-                                        Project collaboration
-                                    </h3>
-
-                                    <p>
-                                        Membahas ide dan pengembangan
-                                        project teknologi.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="contact-point">
-
-                                <i class="bi bi-palette"></i>
-
-                                <div>
-
-                                    <h3>
-                                        UI/UX discussion
-                                    </h3>
-
-                                    <p>
-                                        Berdiskusi mengenai interface
-                                        dan pengalaman pengguna.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
 
                     </div>
 
 
-
-                    <!-- Contact Form -->
                     <div class="col-lg-7">
 
                         <form
+                            id="serviceForm"
                             class="contact-form needs-validation"
-                            action="mailto:emailanda@del.ac.id"
-                            method="post"
-                            enctype="text/plain"
                             novalidate
                         >
 
-                            <!-- Name -->
-                            <div class="form-floating mb-4">
+                            <!-- NAME -->
+
+                            <div
+                                class="form-floating mb-4"
+                            >
 
                                 <input
                                     type="text"
@@ -1110,7 +593,6 @@
                                     id="fullName"
                                     name="nama"
                                     placeholder="Nama Lengkap"
-                                    autocomplete="name"
                                     required
                                 >
 
@@ -1118,27 +600,32 @@
                                     Nama Lengkap
                                 </label>
 
-                                <div class="invalid-feedback">
+                                <div
+                                    class="invalid-feedback"
+                                >
                                     Silakan masukkan nama lengkap.
-                                </div>
-
-                                <div class="valid-feedback">
-                                    Nama sudah diisi.
                                 </div>
 
                             </div>
 
 
+                            <!-- EMAIL -->
 
-                            <!-- Email -->
-                            <div class="input-group mb-4">
+                            <div
+                                class="input-group mb-4"
+                            >
 
-                                <span class="input-group-text">
-                                    <i class="bi bi-envelope"></i>
+                                <span
+                                    class="input-group-text"
+                                >
+                                    <i
+                                        class="bi bi-envelope"
+                                    ></i>
                                 </span>
 
-
-                                <div class="form-floating flex-grow-1">
+                                <div
+                                    class="form-floating flex-grow-1"
+                                >
 
                                     <input
                                         type="email"
@@ -1146,7 +633,6 @@
                                         id="email"
                                         name="email"
                                         placeholder="Email"
-                                        autocomplete="email"
                                         required
                                     >
 
@@ -1156,52 +642,17 @@
 
                                 </div>
 
-
-                                <div class="invalid-feedback">
-                                    Silakan masukkan email yang valid.
+                                <div
+                                    class="invalid-feedback"
+                                >
+                                    Masukkan email yang valid.
                                 </div>
 
                             </div>
 
 
+                            <!-- TOPIC -->
 
-                            <!-- Phone -->
-                            <div class="input-group mb-4">
-
-                                <span class="input-group-text">
-                                    <i class="bi bi-telephone"></i>
-                                </span>
-
-
-                                <div class="form-floating flex-grow-1">
-
-                                    <input
-                                        type="tel"
-                                        class="form-control"
-                                        id="phone"
-                                        name="telepon"
-                                        placeholder="Nomor Telepon"
-                                        pattern="[0-9+\-\s]{8,15}"
-                                        autocomplete="tel"
-                                        required
-                                    >
-
-                                    <label for="phone">
-                                        Nomor Telepon
-                                    </label>
-
-                                </div>
-
-
-                                <div class="invalid-feedback">
-                                    Masukkan nomor telepon yang valid.
-                                </div>
-
-                            </div>
-
-
-
-                            <!-- Topic -->
                             <div class="mb-4">
 
                                 <label
@@ -1210,7 +661,6 @@
                                 >
                                     Topik
                                 </label>
-
 
                                 <select
                                     class="form-select"
@@ -1249,28 +699,33 @@
 
                                 </select>
 
-
-                                <div class="invalid-feedback">
+                                <div
+                                    class="invalid-feedback"
+                                >
                                     Silakan pilih topik.
                                 </div>
 
                             </div>
 
 
+                            <!-- SEMESTER + DATE -->
 
-                            <!-- Semester and Date -->
-                            <div class="row g-3 mb-4">
+                            <div
+                                class="row g-3 mb-4"
+                            >
 
                                 <div class="col-md-6">
 
-                                    <div class="form-floating">
+                                    <div
+                                        class="form-floating"
+                                    >
 
                                         <input
                                             type="number"
                                             class="form-control"
                                             id="semester"
                                             name="semester"
-                                            placeholder="Semester Saat Ini"
+                                            placeholder="Semester"
                                             min="1"
                                             max="14"
                                             required
@@ -1280,10 +735,6 @@
                                             Semester Saat Ini
                                         </label>
 
-                                        <div class="invalid-feedback">
-                                            Masukkan semester 1–14.
-                                        </div>
-
                                     </div>
 
                                 </div>
@@ -1291,7 +742,9 @@
 
                                 <div class="col-md-6">
 
-                                    <div class="form-floating">
+                                    <div
+                                        class="form-floating"
+                                    >
 
                                         <input
                                             type="date"
@@ -1302,12 +755,8 @@
                                         >
 
                                         <label for="date">
-                                            Tanggal yang diinginkan
+                                            Tanggal
                                         </label>
-
-                                        <div class="invalid-feedback">
-                                            Silakan pilih tanggal.
-                                        </div>
 
                                     </div>
 
@@ -1316,20 +765,23 @@
                             </div>
 
 
+                            <!-- PREFERENCE -->
 
-                            <!-- Communication Preference -->
-                            <fieldset class="preference-fieldset mb-4">
+                            <fieldset
+                                class="preference-fieldset mb-4"
+                            >
 
                                 <legend>
                                     Preferensi komunikasi
                                 </legend>
 
-
                                 <div class="row g-2">
 
                                     <div class="col-sm-4">
 
-                                        <label class="preference-option">
+                                        <label
+                                            class="preference-option"
+                                        >
 
                                             <input
                                                 type="radio"
@@ -1339,7 +791,9 @@
                                             >
 
                                             <span>
-                                                <i class="bi bi-envelope"></i>
+                                                <i
+                                                    class="bi bi-envelope"
+                                                ></i>
                                                 Email
                                             </span>
 
@@ -1350,7 +804,9 @@
 
                                     <div class="col-sm-4">
 
-                                        <label class="preference-option">
+                                        <label
+                                            class="preference-option"
+                                        >
 
                                             <input
                                                 type="radio"
@@ -1359,7 +815,9 @@
                                             >
 
                                             <span>
-                                                <i class="bi bi-chat"></i>
+                                                <i
+                                                    class="bi bi-chat"
+                                                ></i>
                                                 Chat
                                             </span>
 
@@ -1370,7 +828,9 @@
 
                                     <div class="col-sm-4">
 
-                                        <label class="preference-option">
+                                        <label
+                                            class="preference-option"
+                                        >
 
                                             <input
                                                 type="radio"
@@ -1379,8 +839,10 @@
                                             >
 
                                             <span>
-                                                <i class="bi bi-camera-video"></i>
-                                                Online Meeting
+                                                <i
+                                                    class="bi bi-camera-video"
+                                                ></i>
+                                                Meeting
                                             </span>
 
                                         </label>
@@ -1389,17 +851,14 @@
 
                                 </div>
 
-
-                                <div class="invalid-feedback">
-                                    Pilih salah satu preferensi.
-                                </div>
-
                             </fieldset>
 
 
+                            <!-- MESSAGE -->
 
-                            <!-- Message -->
-                            <div class="form-floating mb-4">
+                            <div
+                                class="form-floating mb-4"
+                            >
 
                                 <textarea
                                     class="form-control message-field"
@@ -1414,57 +873,59 @@
                                     Pesan
                                 </label>
 
-
-                                <div class="invalid-feedback">
+                                <div
+                                    class="invalid-feedback"
+                                >
                                     Pesan minimal 10 karakter.
-                                </div>
-
-
-                                <div class="valid-feedback">
-                                    Pesan sudah cukup.
                                 </div>
 
                             </div>
 
 
+                            <!-- AGREEMENT -->
 
-                            <!-- Agreement -->
-                            <div class="form-check mb-4">
+                            <div
+                                class="form-check mb-4"
+                            >
 
                                 <input
                                     class="form-check-input"
                                     type="checkbox"
                                     id="agreement"
                                     name="persetujuan"
+                                    value="setuju"
                                     required
                                 >
-
 
                                 <label
                                     class="form-check-label"
                                     for="agreement"
                                 >
-                                    Saya menyetujui informasi yang saya
-                                    kirimkan digunakan untuk keperluan
-                                    komunikasi.
+                                    Saya menyetujui informasi
+                                    yang saya kirimkan digunakan
+                                    untuk keperluan komunikasi.
                                 </label>
 
-
-                                <div class="invalid-feedback">
-                                    Kamu harus menyetujui sebelum mengirim.
+                                <div
+                                    class="invalid-feedback"
+                                >
+                                    Kamu harus menyetujui
+                                    sebelum mengirim.
                                 </div>
 
                             </div>
 
 
+                            <!-- SUBMIT -->
 
-                            <!-- Submit -->
                             <button
                                 type="submit"
                                 class="btn btn-submit"
                             >
-                                Send message
-                                <i class="bi bi-arrow-up-right"></i>
+                                Kirim Permintaan
+                                <i
+                                    class="bi bi-arrow-up-right"
+                                ></i>
                             </button>
 
                         </form>
@@ -1480,10 +941,8 @@
     </main>
 
 
+    <!-- ================= FOOTER ================= -->
 
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
     <footer class="site-footer">
 
         <div class="container">
@@ -1491,7 +950,6 @@
             <div class="footer-content">
 
                 <div>
-
                     <strong>
                         IKA MARIA
                     </strong>
@@ -1499,14 +957,12 @@
                     <span>
                         · Information Systems
                     </span>
-
                 </div>
 
-
                 <p>
-                    Built with HTML5 &amp; CSS · 2026
+                    Built with HTML5, Bootstrap &
+                    JavaScript · 2026
                 </p>
-
 
                 <a href="#home">
                     Back to top
@@ -1520,53 +976,69 @@
     </footer>
 
 
+    <!-- ================= TOAST ================= -->
 
-    <!-- =====================================================
-         BOOTSTRAP JAVASCRIPT
-    ====================================================== -->
+    <div
+        class="toast-container position-fixed bottom-0 end-0 p-3"
+    >
+
+        <div
+            id="serviceToast"
+            class="toast"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+        >
+
+            <div class="toast-header">
+
+                <i
+                    class="bi bi-check-circle-fill text-primary me-2"
+                ></i>
+
+                <strong
+                    class="me-auto"
+                    id="toastTitle"
+                >
+                    Berhasil!
+                </strong>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="toast"
+                    aria-label="Close"
+                ></button>
+
+            </div>
+
+            <div
+                class="toast-body"
+                id="toastMessage"
+            >
+                Permintaan berhasil diproses.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= BOOTSTRAP JS ================= -->
+
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     ></script>
 
 
+    <!-- DATA ACCESS LAYER -->
 
-    <!-- =====================================================
-         FORM VALIDATION
-    ====================================================== -->
-    <script>
-
-        (() => {
-
-            'use strict';
-
-            const forms =
-                document.querySelectorAll('.needs-validation');
+    <script src="js/api-service.js"></script>
 
 
-            Array.from(forms).forEach((form) => {
+    <!-- PRESENTATION LAYER -->
 
-                form.addEventListener(
-                    'submit',
-                    (event) => {
-
-                        if (!form.checkValidity()) {
-
-                            event.preventDefault();
-                            event.stopPropagation();
-
-                        }
-
-                        form.classList.add('was-validated');
-
-                    },
-                    false
-                );
-
-            });
-
-        })();
-
-    </script>
+    <script src="js/app.js"></script>
 
 </body>
 

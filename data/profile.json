@@ -1,0 +1,20 @@
+{
+  "name": "Ika Maria Manurung",
+  "nim": "12S24021",
+  "program": "S1 Sistem Informasi",
+  "institution": "Institut Teknologi Del",
+  "semester": 5,
+  "email": "ikaamarriaa@gmail.com",
+  "location": "Institut Teknologi Del",
+  "description": "Mahasiswa Sistem Informasi yang sedang belajar dan mengembangkan kemampuan di bidang teknologi melalui berbagai project perkuliahan.",
+  "interests": [
+    "UI/UX",
+    "Web Development",
+    "Data Science"
+  ],
+  "statistics": {
+    "projects": 4,
+    "semester": 5,
+    "technologies": 4
+  }
+}

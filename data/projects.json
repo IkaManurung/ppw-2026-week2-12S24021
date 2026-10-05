@@ -1,0 +1,67 @@
+[
+  {
+    "id": "cendramatak",
+    "title": "CendraMatak",
+    "category": "Web Development",
+    "year": "2025",
+    "description": "Platform e-commerce yang menghubungkan wisatawan Danau Toba dengan pengrajin oleh-oleh lokal.",
+    "fullDescription": "CendraMatak merupakan platform e-commerce yang membantu wisatawan menemukan produk oleh-oleh dari pengrajin lokal di sekitar Danau Toba. Platform ini menyediakan katalog digital melalui QR Code dan mendukung pembayaran non-tunai.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Web Development",
+      "E-Commerce"
+    ],
+    "icon": "bi-shop",
+    "image": "images/foto-ika.png",
+    "link": "#"
+  },
+  {
+    "id": "laundry-del",
+    "title": "Laundry Del",
+    "category": "Java",
+    "year": "2025",
+    "description": "Aplikasi manajemen laundry berbasis Java untuk kebutuhan asrama Institut Teknologi Del.",
+    "fullDescription": "Laundry Del adalah aplikasi berbasis Java yang digunakan untuk membantu pengelolaan layanan laundry di asrama Institut Teknologi Del. Sistem mencakup data pelanggan, kategori pakaian, perhitungan berat dan status pesanan.",
+    "tags": [
+      "Java",
+      "OOP",
+      "Desktop Application"
+    ],
+    "icon": "bi-basket",
+    "image": "images/foto-ika.png",
+    "link": "#"
+  },
+  {
+    "id": "ma-u",
+    "title": "Ma-U",
+    "category": "UI/UX",
+    "year": "2025",
+    "description": "Perancangan UI/UX aplikasi mobile untuk specialty matcha shop.",
+    "fullDescription": "Ma-U merupakan project UI/UX untuk aplikasi mobile specialty matcha shop. Perancangan mencakup layout, color palette, kategori produk, detail produk dan alur checkout.",
+    "tags": [
+      "UI/UX",
+      "Figma",
+      "Mobile Design"
+    ],
+    "icon": "bi-phone",
+    "image": "images/foto-ika.png",
+    "link": "#"
+  },
+  {
+    "id": "imunify",
+    "title": "Imunify",
+    "category": "Application",
+    "year": "2025",
+    "description": "Aplikasi pencatatan dan pengingat imunisasi anak berdasarkan Buku KIA.",
+    "fullDescription": "Imunify adalah aplikasi yang membantu orang tua mencatat riwayat imunisasi anak, mendapatkan pengingat jadwal imunisasi dan menemukan fasilitas kesehatan terdekat.",
+    "tags": [
+      "UI/UX",
+      "Health",
+      "Mobile Application"
+    ],
+    "icon": "bi-heart-pulse",
+    "image": "images/foto-ika.png",
+    "link": "#"
+  }
+]

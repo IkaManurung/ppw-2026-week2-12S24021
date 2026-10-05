@@ -1,149 +1,139 @@
-# Portfolio Ika Maria
+# Portfolio Ika Maria — Week 4
 
-Halaman portofolio personal yang merupakan hasil **refactoring dan pengembangan dari Tugas Minggu 2** menggunakan **Bootstrap 5.3** dan **Advanced Custom CSS**.
+## Refactoring Arsitektur Web: Decoupled Multi-Tier, Dynamic CSR, REST Form, dan Network Performance Profiling
 
-Project ini dibuat untuk tugas mandiri **Minggu 03: Penguasaan CSS Lanjutan, CSS Selector Spesifisitas, dan Integrasi Bootstrap 5** pada mata kuliah **Pemrograman dan Pengujian Web (12S3101)**, Institut Teknologi Del.
 
----
-
-## Identitas
-
-- **Nama:** Ika Maria Manurung
-- **NIM:** 12S24021
-- **Program Studi:** S1 Sistem Informasi
-- **Perguruan Tinggi:** Institut Teknologi Del
-- **Mata Kuliah:** Pemrograman dan Pengujian Web (12S3101)
-- **Praktikum:** Minggu 03
-- **Branch:** `week3-bootstrap`
+Pada Week 4 dilakukan refactoring dari aplikasi portfolio yang sebelumnya
+bersifat statis/monolitik menjadi aplikasi web dengan pendekatan **decoupled
+architecture**. Data portfolio dipisahkan ke dalam beberapa sumber JSON,
+kemudian diambil secara asynchronous menggunakan Fetch API dan
+`async/await`, dirender pada sisi client menggunakan JavaScript, dan
+diintegrasikan dengan Universal Dynamic Modal, asynchronous REST form,
+localStorage, serta analisis kinerja jaringan melalui Chrome DevTools.
 
 ---
 
-## Live Demo
+# 1. Identitas Mahasiswa
 
-**GitHub Pages:**
-
-https://USERNAME.github.io/ppw-2026-week2-NIM/
-
-> Ganti `USERNAME` dan `NIM` dengan alamat GitHub Pages yang digunakan pada repository.
-
----
-
-## Tentang Project
-
-Project ini merupakan kelanjutan dari **Portfolio Minggu 2** yang sebelumnya dibangun menggunakan HTML5 semantik dan CSS murni.
-
-Pada Minggu 3, halaman portfolio direfactor dengan mengintegrasikan **Bootstrap 5.3** sebagai CSS framework dan tetap menggunakan **Custom CSS** sebagai override untuk mempertahankan identitas visual personal.
-
-Refactoring dilakukan untuk meningkatkan:
-
-- responsivitas halaman;
-- konsistensi layout;
-- penggunaan komponen UI;
-- interaktivitas halaman;
-- modernisasi formulir;
-- pemeliharaan kode CSS;
-- dan pengalaman pengguna pada berbagai ukuran perangkat.
+| Informasi | Keterangan |
+|---|---|
+| Nama | Ika Maria Manurung |
+| NIM | 12S24021 |
+| Program Studi | S1 Sistem Informasi |
+| Institusi | Institut Teknologi Del |
+| Semester | 5 |
+| Mata Kuliah | Pemrograman dan Pengujian Web (12S3101) |
+| Praktikum | Week 4 |
+| Branch | `week4-architecture` |
 
 ---
 
-## Perubahan Week 2 → Week 3
+# 2. Latar Belakang
 
-| Aspek | Sebelum – Week 2 | Sesudah – Week 3 |
-|---|---|---|
-| Framework | HTML5 + CSS murni | Bootstrap 5.3 + Custom CSS |
-| Layout | CSS Grid dan Flexbox | Bootstrap Container, Row, dan Column |
-| Navbar | Navbar CSS custom | Bootstrap Responsive Navbar + Collapse |
-| Responsive Design | Media Query CSS | Bootstrap Responsive Grid + Custom Media Query |
-| Project | Tampilan project berbasis CSS | Bootstrap Cards dengan responsive grid |
-| Detail Project | Informasi pada halaman utama | Bootstrap Modal Dialog |
-| Badge | CSS custom | Bootstrap Badge + Custom Styling |
-| Form | Form HTML/CSS custom | Bootstrap Form Components |
-| Input | Input standar | Floating Labels dan Input Groups |
-| Select | Select HTML | Bootstrap Form Select |
-| Validasi | Native HTML validation | Bootstrap Visual Validation Feedback |
-| Tema | CSS custom | Bootstrap + CSS Custom Properties |
-| Interaksi | Hover dan transition CSS | Bootstrap Components + Custom Micro-interactions |
-| Ikon | Ikon custom | Bootstrap Icons |
-| Deployment | GitHub Pages | GitHub Pages pada branch Week 3 |
+Pada Week 3, portfolio website telah berhasil dibangun menggunakan HTML5,
+CSS3, Bootstrap 5, dan JavaScript. Namun, data project, informasi profile,
+serta elemen modal masih ditulis secara langsung di dalam `index.html`.
+Pendekatan tersebut membuat presentation layer dan data layer masih
+bergantung satu sama lain.
+
+Pada Week 4, struktur tersebut direfaktor menggunakan pendekatan decoupled.
+Konten dipindahkan menjadi sumber data JSON yang terpisah dari HTML.
+JavaScript bertindak sebagai pengatur komunikasi antara presentation layer dan
+data provider.
+
+Perubahan ini bertujuan untuk menghasilkan aplikasi yang lebih modular,
+lebih mudah dipelihara, dan dapat mengubah data tanpa harus menulis ulang
+struktur HTML secara keseluruhan.
 
 ---
 
-## Isi Halaman
+# 3. Tujuan Implementasi Week 4
 
-### 1. Home
+Implementasi pada Week 4 memiliki beberapa tujuan utama:
 
-Bagian Home berisi:
-
-- identitas singkat;
-- nama pemilik portfolio;
-- deskripsi singkat;
-- foto profil;
-- Call-to-Action (CTA);
-- dan navigasi menuju bagian portfolio.
-
-### 2. About
-
-Bagian About menjelaskan profil singkat dan proses pembelajaran selama menjadi mahasiswa Sistem Informasi.
-
-### 3. Academic Journey
-
-Bagian Academic Journey menampilkan empat project akademik:
-
-1. **CendraMatak**
-2. **Laundry Del**
-3. **Ma-U**
-4. **Imunify**
-
-Project ditampilkan menggunakan Bootstrap Card dalam responsive grid.
-
-### 4. Contact
-
-Bagian Contact menyediakan formulir interaktif dengan:
-
-- Floating Labels;
-- Input Groups;
-- Email input;
-- Phone input;
-- Select category;
-- Semester input;
-- Date input;
-- Communication preference;
-- Textarea;
-- Checkbox persetujuan;
-- Validasi visual.
+1. Memisahkan presentation layer, application logic, dan data layer.
+2. Memindahkan data portfolio ke dalam file JSON modular.
+3. Mengimplementasikan Dynamic Client-Side Rendering (CSR).
+4. Menggunakan Fetch API dan `async/await` untuk pengambilan data.
+5. Menangani Loading, Success, Empty, dan Error UI states.
+6. Menggunakan satu Universal Dynamic Modal untuk seluruh project.
+7. Mengimplementasikan asynchronous HTTP POST pada contact/service form.
+8. Menyimpan histori order menggunakan `localStorage`.
+9. Menampilkan jumlah order secara dinamis pada badge.
+10. Menganalisis performa jaringan menggunakan Chrome DevTools.
 
 ---
 
-## Fitur Teknis Week 3
+# 4. Arsitektur Sistem
 
-### Bootstrap 5.3
+## 4.1 Konsep Arsitektur
 
-Project menggunakan Bootstrap 5.3 melalui CDN:
+Aplikasi menggunakan pendekatan **decoupled multi-tier architecture** yang
+memisahkan tanggung jawab ke dalam beberapa bagian.
 
-- Bootstrap CSS;
-- Bootstrap JavaScript Bundle;
-- Bootstrap Icons.
+### Presentation Tier
 
-Bootstrap CSS dimuat terlebih dahulu dan Custom CSS dimuat setelahnya untuk melakukan styling dan override tampilan.
+Presentation Tier berada pada browser pengguna dan terdiri dari:
 
-### Responsive Grid
+- `index.html`
+- Bootstrap 5
+- Bootstrap Icons
+- `custom-style.css`
+- `app.js`
 
-Portfolio menggunakan sistem responsive grid Bootstrap:
+Layer ini bertanggung jawab terhadap tampilan, interaksi pengguna,
+pengelolaan DOM, filter project, modal, form, dan feedback UI.
 
-```html
-row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4
+### Application / Service Logic Tier
 
+Application / Service Logic menangani proses pengambilan dan pengiriman data.
 
-## Screenshot
+Komponen utamanya adalah:
 
-### Week 2 – Sebelum Refactoring
+- `api-service.js`
+- Fetch API
+- HTTP POST
+- asynchronous request
+- error handling
 
-![Week 2 Desktop](screenshots/desktop.png)
+`api-service.js` berfungsi sebagai Data Access Layer sehingga pemanggilan
+data tidak langsung dilakukan dari HTML.
 
-![Week 2 Mobile](screenshots/mobile.png)
+### Data Storage / Data Provider Layer
 
-### Week 3 – Setelah Refactoring
+Data portfolio dipisahkan ke dalam:
 
-![Week 3 Desktop](screenshots/week3-desktop.png)
+- `profile.json`
+- `projects.json`
+- `services.json`
 
-![Week 3 Mobile](screenshots/week3-mobile.png)
+Selain itu, histori pemesanan layanan disimpan menggunakan `localStorage`
+pada sisi client.
+
+---
+
+# 5. C4 Container Diagram
+
+```mermaid
+flowchart LR
+
+    USER["User / Browser"]
+
+    CDN["Static Server / CDN<br/>GitHub Pages"]
+
+    PRESENTATION["Presentation Tier<br/><br/>index.html<br/>Bootstrap 5<br/>custom-style.css<br/>app.js"]
+
+    SERVICE["Application / Service Logic Tier<br/><br/>api-service.js<br/>Fetch API<br/>HTTP POST"]
+
+    JSON["JSON Data Providers<br/><br/>profile.json<br/>projects.json<br/>services.json"]
+
+    REST["REST API<br/><br/>Mock REST Endpoint<br/>JSONPlaceholder"]
+
+    STORAGE["Client Storage<br/><br/>localStorage"]
+
+    USER --> CDN
+    CDN --> PRESENTATION
+    PRESENTATION --> SERVICE
+    SERVICE --> JSON
+    SERVICE --> REST
+    SERVICE --> STORAGE

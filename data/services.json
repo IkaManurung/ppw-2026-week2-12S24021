@@ -1,0 +1,35 @@
+[
+  {
+    "id": "uiux",
+    "name": "UI/UX Design",
+    "description": "Perancangan tampilan dan pengalaman pengguna untuk website atau aplikasi.",
+    "price": "Mulai dari Rp150.000",
+    "features": [
+      "Wireframe",
+      "Basic UI Design",
+      "User Flow"
+    ]
+  },
+  {
+    "id": "web",
+    "name": "Web Development",
+    "description": "Pembuatan halaman website sederhana menggunakan HTML, CSS, Bootstrap, dan JavaScript.",
+    "price": "Mulai dari Rp200.000",
+    "features": [
+      "Responsive Layout",
+      "Bootstrap",
+      "Basic JavaScript"
+    ]
+  },
+  {
+    "id": "consultation",
+    "name": "Project Consultation",
+    "description": "Diskusi dan konsultasi untuk project perkuliahan atau pengembangan ide aplikasi.",
+    "price": "Mulai dari Rp50.000",
+    "features": [
+      "Project Discussion",
+      "Idea Review",
+      "Basic Technical Guidance"
+    ]
+  }
+]
